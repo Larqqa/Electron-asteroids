@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tulostaulukko</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="leaderboards">
+      <h1 class="leader">Tulostaulukko:</h1>
+      <p>Takaisin: CTRL + B</p>
+    </div>
+    <div class="overlay"></div>
+    <footer>
+      <!-- Before scripts to allow for inclusion of scripts -->
+      <script>
+        if(typeof module === 'object'){
+          window.module = module;
+          module = undefined;
+        }
+      </script>
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <!-- add asteroids -->
+      <script src="js/asteroid.js"></script>
+      <!-- add leaderboards -->
+      <script src="js/leaderboards.js"></script>
+      <!-- After scripts to reset window -->
+      <script>
+        if(window.module) module = window.module;
+      </script>
+
+    </footer>
+  </body>
+</html>

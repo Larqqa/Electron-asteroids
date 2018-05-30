@@ -1,0 +1,172 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900');
+
+/*MAINS*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  background: black;
+  color: white;
+}
+
+canvas {
+  background: black;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+
+/*GAME CONTAINERS*/
+#gameInfo {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+#time {
+  margin: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+#score {
+  margin: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+#level {
+  margin: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+#debug {
+  margin: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+/*GAME SCREEN SETTINGS*/
+/*menu screen*/
+#menu {
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+#title {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 25%;
+  font-size: 7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 35%;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#waterMark {
+  position: absolute;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  top: initial;
+  font-size: .7rem;
+}
+
+/*Credits*/
+#credits {
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+h4 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 25%;
+  font-size: 4rem;
+}
+
+form {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 35%;
+  font-size: 1.5rem;
+}
+
+form div label {
+  font-size: 1rem;
+}
+
+form div input {
+  text-align: center;
+}
+
+form button {
+  border-radius: 3px;
+  border: 3px solid #ccc;
+  outline: none;
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+/*LEADERBOARDS*/
+.leaderboards {
+  z-index: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leader {
+  text-align: center;
+  font-size: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  font-size: 1.5rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: rgba(0,0,0,0.7);
+}
